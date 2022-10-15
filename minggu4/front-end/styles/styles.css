@@ -1,0 +1,52 @@
+@font-face {
+    font-family: fontBody;
+    src: url('../assets/font/Mosk_Typeface/Mosk_Typeface/Mosk\ Normal\ 400.ttf');
+}
+
+@keyframes transisiOpacity {
+    from {opacity: 0%; background-color: rgb(58, 58, 58);}
+    to {opacity: 100%; background-color: rgb(35, 35, 35);}
+}
+
+@keyframes transisi {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+#boxForm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    opacity: 0%;
+    animation-name: transisiOpacity;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.transisi {
+    opacity: 0%;
+    animation-name: transisi;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#tableCenter, tr, td {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[placeholder] {
+    text-align: center;
+    align-items: center;
+}

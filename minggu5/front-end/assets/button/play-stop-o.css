@@ -1,0 +1,29 @@
+.gg-play-stop-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 33px;
+    height: 33px;
+    border: 3px solid;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.gg-play-stop-o:hover {
+    color: rgb(204, 204, 204);
+    transition-duration: 0.5s;
+}
+
+.gg-play-stop-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 9px;
+    left: 9px;
+    background: currentColor
+}

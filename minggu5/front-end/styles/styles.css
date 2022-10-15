@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Mosk Typeface Bold';
+    src: url(/front-end/assets/font/Mosk_Typeface/Mosk_Typeface/Mosk\ Bold\ 700.ttf);
+}
+
+@font-face {
+    font-family: 'Mosk Typeface Regular';
+    src: url(/front-end/assets/font/Mosk_Typeface/Mosk_Typeface/Mosk-Normal-400.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.center-iframes {
+    margin-top: 13%;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: 'Mosk Typeface Bold';
+    background-color: rgb(45, 45, 45);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.navigation {
+    display: flex;
+    color: white;
+    font-family: 'Mosk Typeface Regular';
+    background-color: rgb(45, 45, 45);
+    margin-right: 30%;
+    margin-left: 30%;
+    justify-content: center;
+}
+
+.mainArt {
+    color: white;
+    font-family: 'Mosk Typeface Regular';
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#titleArticles {
+    text-align: center;
+}
+
+#firstParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#secondParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+#thirdParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+#fourthParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+#fifthParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+.footerWeb {
+    text-align: center;
+    color: white;
+    font-family: 'Mosk Typeface Regular';
+}
+
+.detailsContainer {
+    color: white;
+    background-color: rgb(45, 45, 45);
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#firstDetails {
+    font-family: 'Mosk Typeface Regular';
+}
+
+#firstParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#secDetails {
+    font-family: 'Mosk Typeface Regular';
+}
+
+#secParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#thirdDetails {
+    font-family: 'Mosk Typeface Regular';
+}
+
+#thirdParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#fourthDetails {
+    font-family: 'Mosk Typeface Regular';
+}
+
+#fourthParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+#fifthDetails {
+    font-family: 'Mosk Typeface Regular';
+}
+
+#fifthParag {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+.timeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#realClock {
+    font-family: 'Mosk Typeface Regular';
+    font-size: 70px;
+    color: white;
+}
+
+.audioThumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.controlsCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video {
+    width: 560px;
+    height: 315px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid azure;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+::cue {
+    font-size: 15px;
+    color: #ccc;
+    background-color: black;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.css-button {
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.css-button-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}

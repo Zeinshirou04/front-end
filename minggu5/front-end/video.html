@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="HTML Video | Tak Ingin Usai & Rubia Honkai Impact">
+    <meta name="keywords" content="Video, Controls, Tak Ingin Usai, Mythia Batford, Mythia, Miti, Rubia, Honkai Impact, Honkai, Fu Hua">
+    <meta name="author" content="Farras Adhani Zayn"> 
+    <link rel="stylesheet" href="/front-end/styles/styles.css">
+    <link rel="stylesheet" href="./assets/button/play-button-o.css">
+    <link rel="stylesheet" href="./assets/button/play-pause-o.css">
+    <link rel="stylesheet" href="./assets/button/play-fast-o.css">
+    <link rel="stylesheet" href="./assets/button/play-slow-o.css">
+    <link rel="stylesheet" href="./assets/button/play-stop-o.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video | PemWeb 2022 Layout Hyper Text Markup Language</title>
+</head>
+<body class="background-animations">
+    <div class="baseTrans">
+        <div>
+            <h1>Welcome to MultimediaHub</h1>
+        </div>
+        <div>
+            <video id="songVid" onmouseover="controlsVidOn()" onmouseout="controlsVidOff()">
+                <source src="./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4" >
+            </video>
+        </div>
+        <div class="css-button-center">
+            <button onclick="playVid()" class="css-button"><i class="gg-play-play-o"></i></button>
+            <button onclick="pauseVid()" class="css-button"><i class="gg-play-pause-o"></i></button>
+            <button onclick="stopVid()" class="css-button"><i class="gg-play-stop-o"></i></button>
+        </div>
+    </div>
+</body>
+<script>
+    var opVid = document.getElementById("songVid");
+
+    opVid.volume = 0.1;
+    function playVid() {
+        opVid.play();
+    }
+    function pauseVid() {
+        opVid.pause();
+    }
+    function stopVid() {
+        opVid.load();
+        opVid.pause();
+    }
+    function controlsVidOn() {
+        opVid.controls = true;
+    }
+    function controlsVidOff() {
+        opVid.controls = false;
+    }
+    </script>
+</html>
