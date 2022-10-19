@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Biography, British, Mathematician, Logician, Alan, Turing, Test, Founder, Brittanica, People, Scientist, University Of Cambridge, University, Cambridge">
+    <meta name="description" content="Biography of Alan Turing | British mathematician and Logician.">
+    <meta name="author" content="Farras Adhani Zayn">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        @media screen and (min-width: 924px) {
+            /* For Fullscreen Page */
+            #feedbackSection {
+                scale: 1.1;
+            }
+        }
+        @media screen and (max-width: 923px) {
+            /* For Half Windowed */
+        }
+    </style>
+    <title>Contact | Scientist Biography | October 2022</title>
+</head>
+<body>
+    <div>
+        <nav class="navTop x-center">
+            <a href="/front-end/index.html" class="nav mosk"><b>Home</b></a>
+            <a href="/front-end/figure/" class="nav mosk"><b>Scientist</b></a>
+            <a href="/front-end/documentary/" class="nav mosk"><b>Documentary</b></a>
+            <a href="/front-end/about.html" class="nav mosk"><b>About</b></a>
+            <a href="/front-end/contact.html" class="nav mosk"><b>Contact</b></a>
+        </nav>
+    </div>
+    <div class="flex column">
+        <header class="title mosk x-center">
+            <h1 id="contactPageHeader1"><b>Have any feedback?</b><h1>
+            <h2 id="contactPageHeader2"><b>You can write it below</b><h2>
+        </header>
+        <form action="/back-end/data.php" method="post">
+            <table class="x-center" id="feedbackSection">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nama">Name</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="nama" value="" placeholder="Write your name..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="email" name="nama" value="" placeholder="Write your email..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="feedback">Comment</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="feedback" id="feedback" cols="28" rows="10" placeholder="Write your feedback here..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit" id="submitFeedback" class="x-center">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <footer class="x-center mosk">
+            &copy; Copyright 2022 | Farras Adhani Zayn
+        </footer>
+    </div>
+</body>
+</html>

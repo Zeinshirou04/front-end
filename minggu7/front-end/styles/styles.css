@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Mosk';
+    src: url(/front-end/assets/font/Mosk_Typeface/Mosk_Typeface/Mosk-Normal-400.ttf);
+}
+
+body {
+    background-color: #594545;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #6e5353;
+    padding: 3px 0px;
+}
+
+figure > div {
+    padding-top: 30px;
+}
+
+figure > a {
+    padding-top: 30px;
+}
+
+table > tr, td {
+    color: #EAEAEA;
+    font-family: 'Mosk';
+}
+
+td {
+    padding: 0px 10px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 20px;
+}
+
+input {
+    height: 20px;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+}
+
+textarea {
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+}
+
+details {
+    color: #EAEAEA;
+    background-color: #6e5353;
+    border: 1px solid #6e5353;
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    margin-left: 67px;
+    margin-bottom: 5px;
+    width: 120px;
+    text-align: left;
+}
+
+details > summary {
+    font-size: 18px;
+}
+
+details[open] {
+    margin: auto;
+    margin-top: 10px;
+    padding: 0px 8px;
+    width: fit-content;
+}
+
+footer {
+    position: relative;
+    padding: 3px 0px;
+    color: #EAEAEA;
+}
+
+#firstPageHeader {
+    margin-top: 0px;
+    padding-top: 40px;
+    font-size: 100px;
+    color: #EAEAEA;
+}
+
+#scientistHeader {
+    font-size: 100px;
+    color: #EAEAEA;
+    padding-top: 40px;
+    margin-top: 0px;
+}
+
+#docPageHeader {
+    font-size: 100px;
+    color: #EAEAEA;
+    padding-top: 40px;
+    margin-top: 0px;
+}
+
+#aboutPageHeader {
+    font-size: 100px;
+    color: #EAEAEA;
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+#contactPageHeader1 {
+    font-size: 100px;
+    color: #EAEAEA;
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+#contactPageHeader2 {
+    font-size: 30px;
+    color: #EAEAEA;
+}
+
+.footer {
+    background-color: #6e5353;
+}
+
+#figure {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#firstPageFig {
+    padding-bottom: 40px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.circleFrame {
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.mosk {
+    font-family: 'Mosk';
+}
+
+.block {
+    display: block;
+}
+
+.x-center {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.y-center {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.nav {
+    color: #EAEAEA;
+    text-decoration: none;
+}
+
+.navTop > a {
+    padding: 0 10px;
+}
+
+.figure {
+    opacity: 50%;
+    scale: 1.2;
+    transition-duration: 2s;
+    padding: 0px 40px;
+    padding-bottom: 40px;
+}
+
+.figure:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.figureImg {
+    width: 130px;
+    height: 130px;
+}
+
+.figureName {
+    padding-top: 10px;
+    color: #EAEAEA;
+    font-size: 20px;
+}
+
+#feedbackSection {
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+#submitFeedback {
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Mosk';
+    margin-top: 10px;
+    border: 0px;
+}
+
+#submitFeedback:hover {
+    width: 60px;
+    background-color: rgb(231, 230, 230);
+    font-family: 'Mosk';
+}
+
+#detSummaryContainer {
+    padding: 10px 0px;
+}
+
+#detSummaryContainer > img {
+    height: 150px;
+}
+
+#detDocumentary {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.article {
+    text-indent: 2em;
+    font-size: 24px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+#artFig {
+    margin-left: -0.01%;
+}
+
+#h1About {
+    margin-top: 40px;
+}
+
+#alanTuring {
+    padding: 40px 0px;
+}
