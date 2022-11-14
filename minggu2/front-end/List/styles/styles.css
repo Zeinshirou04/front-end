@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    background-image: url('http://127.0.0.1/My%20Works/Minggu%202/front-end/List/assets/image/gif/Private.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+
+.title-times {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.flex-container > div {
+    background-color: grey;
+    padding: 2%;
+    margin-top: 1em;
+}
+.flex-container > div > img{
+  max-width: 100%
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}

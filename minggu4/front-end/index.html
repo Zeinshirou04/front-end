@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HTML ini adalah tugas untuk PemWeb">
+        <link rel="icon" type="image/ico" href="/assets/images/ico/download.ico">
+    </head>
+    <body>
+        <div class="transisi">
+            <div>
+                <h1>Form HTML</h1>
+            </div>
+            <div id="boxForm">
+                <form name="formPertama" action="../back-end/php/proses.php" method="post">
+                    <table id="tableCenter">
+                        <tr>
+                            <td>Nama</td>
+                            <td>: <input type="text" name="fullName" placeholder="Masukkan Nama*" required></td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>: <input type="text" name="nim" placeholder="Masukkan NIM*" required></td>
+                        </tr>
+                        <tr>
+                            <td>Program Studi</td>
+                            <td>: 
+                                <select>
+                                    <option value="">Pilih Prodi</option>
+                                    <option value="ti">S1 - Teknik Informatika</option>
+                                    <option value="ilkom">S1 - Ilmu Komunikasi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tgl Lahir</td>
+                            <td>: <input type="date" id="tglLahir" name="tglLahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Bidang Minat</td>
+                            <td>
+                                <div>
+                                    <input type="checkbox" id="webDev" name="webDev" value="Web Developer">
+                                    <label for="webDev">Web Developer</label><br>
+                                    <input type="checkbox" id="mobileDev" name="mobileDev" value="Mobile Developer">
+                                    <label for="mobileDev">Mobile Developer</label><br>
+                                    <input type="checkbox" id="dataSci" name="dataSci" value="Data Science">
+                                    <label for="dataSci">Data Science</label><br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lampiran</td>
+                            <td>: 
+                                <label for="lampiranKtm">Scan KTM</label>
+                                <input type="file" id="lampiranKtm" name="lampiranKtm" required>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="chkKtm" id="chkKtm">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>: 
+                                <label for="lampiranRapot">Scan Rapot</label>
+                                <input type="file" id="lampiranRapot" name="lampiranRapot" required>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="" id="chkRapot">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>: 
+                                <label for="lampiranFoto">Pas Foto Mahasiswa</label>
+                                <input type="file" id="lampiranFoto" name="lampiranFoto" required>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="" id="chkFoto">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" id="submit" name="submit" value="Kirim"><input type="reset" id="reset" name="reset"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        var scanKtm = document.getElementById('lampiranKtm');
+        var chkKtm = document.getElementById('chkKtm');
+        var x = 0;
+        chkKtm.disabled = true;
+        
+        scanKtm.addEventListener("input", function() {
+            x += 1;
+            if (x == 1) {
+                chkKtm.checked = true;
+            } else if (x == 2) {
+                chkKtm.checked = false;
+                x -= 2;
+            }
+        })
+
+        var scanRapot = document.getElementById('lampiranRapot');
+        var chkRapot = document.getElementById('chkRapot');
+        var y = 0;
+        chkRapot.disabled = true;
+        
+        scanRapot.addEventListener("input", function() {
+            y += 1;
+            if (y == 1) {
+                chkRapot.checked = true;
+            } else if (y == 2) {
+                chkRapot.checked = false;
+                y -= 2;
+            }
+        })
+
+        var pasFoto = document.getElementById('lampiranFoto');
+        var chkFoto = document.getElementById('chkFoto');
+        var z = 0;
+        chkFoto.disabled = true;
+        
+        pasFoto.addEventListener("input", function() {
+            z += 1;
+            if (z == 1) {
+                chkFoto.checked = true;
+            } else if (z == 2) {
+                chkFoto.checked = false;
+                z -= 2;
+            }
+        })
+    </script>
+</html>

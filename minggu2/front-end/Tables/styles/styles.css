@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    background-image: url('http://127.0.0.1/My%20Works/Minggu%202/front-end/Tables/assets/image/gif/Private.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+table, tr, td {
+    border: 1px solid;
+    border-color: white;
+    border-collapse: collapse;
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+th {
+    padding: 1%;
+    border: 1px solid;
+    border-color: white;
+    border-collapse: collapse;
+}
+
+th:nth-child(even), tr:nth-child(even) {
+    background-color: grey;
+}
+
+th:nth-child(odd), tr:nth-child(odd) {
+    background-color: grey;
+}
+
+.flex-container {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: center;
+}
+
+.flex-container > div {
+    background-color: grey;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1em;
+    width: 60%;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./assets/button/play-button-o.css">
+        <link rel="stylesheet" href="./assets/button/play-pause-o.css">
+        <link rel="stylesheet" href="./assets/button/play-fast-o.css">
+        <link rel="stylesheet" href="./assets/button/play-slow-o.css">
+        <link rel="stylesheet" href="./assets/button/play-stop-o.css">
+        <!-- <link rel="stylesheet" href="http://127.0.0.1/myWorks/minggu3/front-end/assets/button/play-backwards.css">
+        <link rel="stylesheet" href="http://127.0.0.1/myWorks/minggu3/front-end/assets/button/play-forwards.css"> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HTML ini adalah tugas untuk PemWeb">
+        <link rel="icon" type="image/png" href="./assets/images/ico/download.ico">
+        <title>Multimedia</title>
+    </head>
+    
+    <body class="background-animations">
+        <!-- <div class="bgContainer">
+        </div> -->
+        <div class="baseTrans">
+            <div>
+                <h1>Welcome to MultimediaHub</h1>
+            </div>
+            <div>
+                <video id="songVid" onmouseover="controlsVid()">
+                    <source src="./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4" >
+                    <track id="trackVid" default src="./assets/media/subtitle/Tak_Ingin_Usai-Mythia_Batford.vtt">
+                </video>
+            </div>
+            <div class="css-button-center">
+                <button class="css-button" id="backVid"><i class="gg-play-slow-o flip"></i></button>
+                <!-- <button class="css-button" id="slowVid"><i class="gg-play-backwards"></i></button> -->
+                <button onclick="playVid()" class="css-button"><i class="gg-play-play-o"></i></button>
+                <button onclick="pauseVid()" class="css-button"><i class="gg-play-pause-o"></i></button>
+                <button onclick="stopVid()" class="css-button"><i class="gg-play-stop-o"></i></button>
+                <!-- <button class="css-button" id="fastVid"><i class="gg-play-forwards"></i></button> -->
+                <button class="css-button" id="nextVid"><i class="gg-play-fast-o"></i></button>
+            </div>
+        </div>
+        <!-- <div class="button-center">
+            <div>
+                <a href="../../minggu2/front-end/List/List.html" target="_self">
+                    <button class="button button1" id="button-center">Before Page</button>
+                </a>
+                <a href="../../minggu2/front-end/List/List.html" target="_self">
+                    <button class="button button1" id="button-center">Next Page</button>
+                </a>
+            </div>
+        </div> -->
+    </body>
+    <script>
+        var opVid = document.getElementById("songVid");
+        var fastVid = document.getElementById("fastVid");
+        var slowVid = document.getElementById("slowVid");
+        var trackVid = document.getElementById("trackVid");
+
+        opVid.volume = 0.1;
+
+        // function myFunction() { 
+        //     var text1 = opVid.addTextTrack("caption");
+        //     text1.addCue(new TextTrackCue("Test text", 10.000, 20.000, "", "", "", true));
+        // }
+        function playVid() {
+            opVid.play();
+        }
+        function pauseVid() {
+            opVid.pause();
+        }
+        function stopVid() {
+            opVid.load();
+            opVid.pause();
+        }
+        function controlsVid() {
+			opVid.controls = true;
+		}
+        
+        var x = 1;
+        var y = 2;
+        var nextVid = document.getElementById("nextVid");
+        nextVid.onclick = function() {
+            y +=1
+            videoToPlay();
+            x += 1;
+            console.log("x1 = ", x)
+            console.log("y1 = ", y)
+        }
+        var backVid = document.getElementById("backVid");
+        backVid.onclick = function() {
+            y -= 1;
+            videoToPlay();
+            x -= 1;
+            console.log("x1 = ", x)
+            console.log("y1 = ", y)
+        }
+        function videoToPlay() {
+            switch (x) {
+                case x = 0:
+                    opVid.src = "./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4";
+                    trackVid.src = "./assets/media/subtitle/Tak_Ingin_Usai-Mythia_Batford.vtt";
+                    y = 2;
+                    x = 2;
+                    break;
+                case x = 1:
+                    if (x === 4) {
+                        opVid.src = "./assets/media/video/Honkai Impact 3rd Valkyrie Theme Rubia Performed by Zhou Shen  Honkai Impact 3rd_480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Honkai Impact_3rd_Valkyrie_Theme_Rubia_(Performed_by_Zhou_Shen)-Honkai_Impact_3rd.vtt";
+                        x = 2;
+                        y = 3;
+                    }
+                    else if (y === 3) {
+                        opVid.src = "./assets/media/video/Honkai Impact 3rd  New Theme Song TruE MV Released   Honkai Impact 3rd_480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Honkai_Impact_3rd_New_Theme_Song_TruE_MV_Released_(Honkai_Impact_3rd).vtt";
+                    }
+                    else if (y === 1) {
+                        opVid.src = "./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Tak_Ingin_Usai-Mythia_Batford.vtt";
+                        alert("Start of playlist");
+                        y = 2;
+                        x = 2;
+                    }
+                    break;
+                case x = 2:
+                    if (y === 4) {
+                        opVid.src = "./assets/media/video/Honkai Impact 3rd Valkyrie Theme Rubia Performed by Zhou Shen  Honkai Impact 3rd_480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Honkai Impact_3rd_Valkyrie_Theme_Rubia_(Performed_by_Zhou_Shen)-Honkai_Impact_3rd.vtt";
+                        x = 1;
+                        break;
+                    }
+                    else if (y === 5) {
+                        alert("End of playlist");
+                        y = 4;
+                        x = 2;
+                    }
+                    else if ( y === 3) {
+                        opVid.src = "./assets/media/video/Honkai Impact 3rd  New Theme Song TruE MV Released   Honkai Impact 3rd_480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Honkai_Impact_3rd_New_Theme_Song_TruE_MV_Released_(Honkai_Impact_3rd).vtt";
+                        y = 2;
+                        x = 2;
+                    }
+                case x = 3:
+                    if (y === 5) {
+                        alert("End of playlist");
+                        x = 2;
+                        y = 4;
+                    }
+                    else if (y === 3) {
+                        opVid.src = "./assets/media/video/Honkai Impact 3rd  New Theme Song TruE MV Released   Honkai Impact 3rd_480p.mp4";
+                        trackVid.src = "./assets/media/subtitle/Honkai_Impact_3rd_New_Theme_Song_TruE_MV_Released_(Honkai_Impact_3rd).vtt";
+                        y = 1;
+                        x = 1;
+                    }
+                    break;
+                case x = 4:
+                    alert("End of playlist");
+                    x = 1;
+
+                default:
+                    alert("Something went wrong");
+            }
+            opVid.play()
+        }
+        // fastVid.onclick = function() {
+        //     x = x + 0.5;
+        //     opVid.playbackRate = x;
+        // }
+        // slowVid.onclick = function() {
+        //     x = x - 0.5;
+        //     opVid.playbackRate = x;
+        // }
+    </script>
+</html>

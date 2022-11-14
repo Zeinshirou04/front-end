@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="HTML Time | Real Time Clock in Indonesia">
+    <meta name="keywords" content="Time, Real Time, Indonesia, Clock, Jam, Waktu, Jakarta">
+    <meta name="author" content="Farras Adhani Zayn"> 
+    <link rel="stylesheet" href="/front-end/styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Time | PemWeb 2022 Layout Hyper Text Markup Language</title>
+</head>
+<body>
+    <div>
+        <div class="timeContainer">
+            <p id="realClock"></p>
+        </div><br>
+        <div class="footerWeb">
+            <footer>
+                Made in <time datetime="10-10-2022">10 Oktober 2022</time>
+            </footer>
+            <footer class="footerWeb">
+                copyright <i>&copy;</i> pbw2022
+            </footer>
+        </div>
+    </div>
+    <script>
+        var realTimeClock = document.getElementById("realClock");
+
+        function refreshTime() {
+            var date = new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"});
+            var dateFormat = date.replace(", ", " - ");
+            realTimeClock.innerHTML = dateFormat;
+        }
+
+        setInterval(refreshTime, 1000)
+    </script>
+</body>
+</html>

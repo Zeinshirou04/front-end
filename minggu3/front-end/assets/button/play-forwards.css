@@ -1,0 +1,34 @@
+.gg-play-forwards {
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   transform: scale(var(--ggs,1));
+   width: 4.5px;
+   height: 15px;
+   background: currentColor;
+   color: white;
+   margin-bottom: 1em;
+}
+
+.gg-play-forwards:hover {
+   color: rgb(204, 204, 204);
+   transition-duration: 0.5s;
+}
+
+.gg-play-forwards::after,
+.gg-play-forwards::before {
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   width: 0;
+   height: 15px;
+   border-top: 7.5px solid transparent;
+   border-bottom: 7.5px solid transparent;
+   border-left: 9px solid;
+   left: -10.5px
+}
+
+.gg-play-forwards::before {
+   left: -21px
+}

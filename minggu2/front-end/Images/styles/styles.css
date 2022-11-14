@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    background-image: url('http://127.0.0.1/My%20Works/Minggu%202/front-end/Images/assets/image/gif/Private.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+.image {
+    width: 23%;
+    margin-right: 1em;
+}
+
+.image:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* .flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container > div {
+    padding: 3%;
+    margin: 1em;
+} */
+
+.flex-container-width {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: center;
+}
+
+.flex-container-width > div {
+    background-color: grey;
+    padding: 2%;
+    margin: 1em;
+}
+
+.flex-container-width > div > img{
+    max-width: 100%
+  }
+
+/* .flex-container-height {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.flex-container-height > div {
+    background-color: grey;
+    padding: 3%;
+    margin: 1em;
+} */
+
+.button {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}

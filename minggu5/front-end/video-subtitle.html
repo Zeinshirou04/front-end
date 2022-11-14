@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="HTML Audio | Tak Ingin Usai Cover Mythia Batford">
+  <meta name="keywords" content="Tak Ingin Usai, Dont Want to End, Mythia Batford, Mythia, Vtuber, Cover">
+  <meta name="author" content="Farras Adhani Zayn">
+  <link rel="stylesheet" href="/front-end/styles/styles.css">
+  <link rel="stylesheet" href="./assets/button/play-button-o.css">
+  <link rel="stylesheet" href="./assets/button/play-pause-o.css">
+  <link rel="stylesheet" href="./assets/button/play-fast-o.css">
+  <link rel="stylesheet" href="./assets/button/play-slow-o.css">
+  <link rel="stylesheet" href="./assets/button/play-stop-o.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Subtitled Video | PemWeb 2022 Layout Hyper Text Markup Language</title>
+</head>
+
+<body class="background-animations">
+  <div class="baseTrans">
+    <div>
+      <h1>Welcome to MultimediaHub</h1>
+    </div>
+    <div>
+      <video id="songVid" onmouseover="controlsVid()">
+        <source src="./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4">
+        <track id="trackVid" default src="./assets/media/subtitle/Tak_Ingin_Usai-Mythia_Batford.vtt">
+      </video>
+    </div>
+    <div class="css-button-center">
+      <button class="css-button" id="backVid">
+        <i class="gg-play-slow-o flip"></i>
+      </button>
+      <button onclick="playVid()" class="css-button">
+        <i class="gg-play-play-o"></i>
+      </button>
+      <button onclick="pauseVid()" class="css-button">
+        <i class="gg-play-pause-o"></i>
+      </button>
+      <button onclick="stopVid()" class="css-button">
+        <i class="gg-play-stop-o"></i>
+      </button>
+      <button class="css-button" id="nextVid">
+        <i class="gg-play-fast-o"></i>
+      </button>
+    </div>
+  </div>
+</body>
+<script>
+  var opVid = document.getElementById("songVid");
+  var fastVid = document.getElementById("fastVid");
+  var slowVid = document.getElementById("slowVid");
+  var trackVid = document.getElementById("trackVid");
+
+  opVid.volume = 0.1;
+  
+  function playVid() {
+    opVid.play();
+  }
+  function pauseVid() {
+    opVid.pause();
+  }
+  function stopVid() {
+    opVid.load();
+    opVid.pause();
+  }
+  function controlsVid() {
+    opVid.controls = true;
+  }
+
+  var x = 1;
+  var nextVid = document.getElementById("nextVid");
+  var backVid = document.getElementById("backVid");
+
+  nextVid.onclick = function () {
+    console.log("Nilai X sebelum ditekan maju = ", x);
+    videoToPlayNext();
+    x += 1;
+    console.log("Nilai X setelah ditekan maju = ", x);
+  };
+  backVid.onclick = function () {
+    console.log("Nilai X sebelum ditekan mundur = ", x);
+    x -= 1;
+    videoToPlayBack();
+    console.log("Nilai X setelah ditekan mundur = ", x);
+  };
+
+  function videoToPlayNext() {
+    switch (x) {
+      case (x = 1):
+        opVid.src =
+          "./assets/media/video/Honkai Impact 3rd Valkyrie Theme Rubia Performed by Zhou Shen  Honkai Impact 3rd_480p.mp4";
+        trackVid.src =
+          "./assets/media/subtitle/Honkai Impact_3rd_Valkyrie_Theme_Rubia_(Performed_by_Zhou_Shen)-Honkai_Impact_3rd.vtt";
+        break;
+      case (x = 2):
+        alert("End of Playlist!");
+        x = 1;
+        break;
+
+      default:
+        alert("Something went wrong");
+    }
+    opVid.play();
+  }
+  function videoToPlayBack() {
+    switch (x) {
+      case (x = 0):
+        alert("Start of Playlist!");
+        x = 1;
+        break;
+      case (x = 1):
+        opVid.src = "./assets/media/video/COVER  Tak Ingin Usai Mythia Batford _480p.mp4";
+        trackVid.src = "./assets/media/subtitle/Tak_Ingin_Usai-Mythia_Batford.vtt";
+        break;
+    }
+    opVid.play();
+  }
+</script>
+
+</html>
