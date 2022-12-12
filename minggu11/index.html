@@ -21,23 +21,17 @@
         <label for="numY">Input</label>
         <input type="text" id="numY" name="numY" title="numY">
         <button type="submit" onclick="_result()" >=</button>
-        <input type="result" name="result" disabled>
+        <input type="result" name="result" placeholder="0" disabled>
     </form><br>
     <h3>Daftar Nama HMTI 2023</h3>
-    <form name="anggota" action="#">
+    <form name="anggota" action="" onsubmit="_submitUser()">
         <label for="nama">Masukkan Nama</label>
         <input type="text" name="nama" id="nama" title="nama" value="" required>
-        <button type="submit" name="submit" onclick="_submitUser()" value="submit">submit</button>
+        <button type="submit" name="submit" value="submit">submit</button>
     </form><br>
     <p id="jumlahMahasiswa"></p>
+    <p>Data Nama HMTI 2023</p>
     <table>
-        <thead>
-            <tr>
-                <td>
-                    Data Nama HMTI 2023
-                </td>
-            </tr>
-        </thead>
         <tbody id="dataHMTI">
         </tbody>
     </table>
