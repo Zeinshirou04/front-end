@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Minggu 11 | PBW 2022</title>
+</head>
+<body>
+    <form name="aritmathics" action="#">
+        <label for="numX">Input</label>
+        <input type="text" id="numX" name="numX" title="numX"><br><br>
+        <label for="opr">Choose Operator</label>
+        <select name="opr" id="opr">
+            <option value="sum">+</option>
+            <option value="sub">-</option>
+            <option value="mpy">*</option>
+            <option value="div">/</option>
+        </select><br><br>
+        <label for="numY">Input</label>
+        <input type="text" id="numY" name="numY" title="numY">
+        <button type="submit" onclick="_result()" >=</button>
+        <input type="result" name="result" disabled>
+    </form><br>
+    <h3>Daftar Nama HMTI 2023</h3>
+    <form name="anggota" action="#">
+        <label for="nama">Masukkan Nama</label>
+        <input type="text" name="nama" id="nama" title="nama" value="" required>
+        <button type="submit" name="submit" onclick="_submitUser()" value="submit">submit</button>
+    </form><br>
+    <p id="jumlahMahasiswa"></p>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Data Nama HMTI 2023
+                </td>
+            </tr>
+        </thead>
+        <tbody id="dataHMTI">
+        </tbody>
+    </table>
+    <script src="algorithm.js"></script>
+</body>
+</html>
