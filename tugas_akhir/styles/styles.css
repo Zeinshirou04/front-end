@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&family=Lato&family=Montserrat:wght@400;500&family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500&family=Tangerine:wght@400;700&display=swap');
 
+@keyframes audSpin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes flowerSpin {
+    from {
+        transform: scaleX(-1) scaleY(-1) rotate(30deg);
+    } to {
+        transform: scaleX(-1) scaleY(-1) rotate(-30deg);
+    }
+} */
+
+@keyframes changeHtml {
+    from {
+        opacity: 100%;
+    } to {
+        opacity: 0%;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -37,6 +61,11 @@ body {
     background-color: rgba(0, 0, 0, 0.364);
 }
 
+.editTombol {
+    color: black;
+    align-self: center;
+}
+
 #front-left {
     width: 60%;
     height: 100%;
@@ -44,9 +73,12 @@ body {
 
 #aud-wrapper {
     bottom: 0;
+    text-decoration: none;
+    color: black;
 }
 
 #aud-controller {
+    display: flex;
     margin: 12px;
     bottom: 0;
     width: 55px;
@@ -62,6 +94,8 @@ body {
     top: 25%;
     margin-left: auto;
     margin-right: auto;
+    transform: rotate(0deg);
+    /* animation: audSpin 10s linear infinite; */
 }
 
 #front-right {
@@ -106,10 +140,14 @@ body {
 }
 
 #flower-center-top {
-    top: 0px;
+    top: -10px;
     left: auto;
     right: auto;
-    transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1) rotate(30deg);
+    /* animation-name: flowerSpin;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; */
 }
 
 #flower-center-bottom {
